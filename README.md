@@ -1,6 +1,8 @@
 # TU-Berlin-Summer-School
 During 21st July to 15th August, in Berlin Germany
 
+Grade: 1.0 (according to the German Grading System)
+
 Did 3 comprehensive projects in Java.
 
 The source codes are uploded here.
