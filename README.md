@@ -20,7 +20,7 @@ A 4-week intensive Java programming course at Technische Universität Berlin, co
 
 ## ✅ Final Evaluation Transcript
 
-<img src="Yiwen-Zhang-Medias/transcript.png" width="791" height="1118" alt="Transcript">
+!(https://github.com/VikingCrusader/TU-Berlin-Summer-School/blob/main/Yiwen%20Zhang%20Medias/transcript.png)
 
 ---
 
