@@ -4,14 +4,13 @@ A Java desktop application for managing dental appointments, built with Swing, S
 
 ---
 
-<table>
+## Screenshots
+
+<table width="100%">
     <tr>
-        <td align="center"><img src="images/mainmenu.png" alt="mainmenu.png" width="320" /><br /><sub>Main menu</sub></td>
-        <td align="center"><img src="images/login.png" alt="login.png" width="320" /><br /><sub>Login screen</sub></td>
-    </tr>
-    <tr>
-        <td align="center"><img src="images/calendar.png" alt="calendar.png" width="320" /><br /><sub>Calendar view</sub></td>
-        <td align="center"><img src="images/Authors.png" alt="Authors.png" width="320" /><br /><sub>Authors</sub></td>
+        <td align="center" width="33%"><img src="images/mainmenu.png" alt="mainmenu.png" width="100%" /><br /><sub>Main menu</sub></td>
+        <td align="center" width="33%"><img src="images/login.png" alt="login.png" width="100%" /><br /><sub>Login screen</sub></td>
+        <td align="center" width="33%"><img src="images/calendar.png" alt="calendar.png" width="100%" /><br /><sub>Calendar view</sub></td>
     </tr>
 </table>
 
