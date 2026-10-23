@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Book List</title>
+<style>
+body { font-family: Arial, sans-serif; padding: 20px; }
+h1 { color: #333; }
+.category { margin-top: 20px; }
+.book { margin-left: 20px; }
+</style>
+</head>
+<body>
+<h1>Book List</h1>
+<div id="books">Loading...</div>
+<script>
+async function fetchBooks() {
+  try {
+    const response = await fetch('/topics');
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    const books = await response.json();
+
+    // Group books by description
+    const grouped = {};
+    books.forEach(book => {
+      const category = book.description || "Uncategorized";
+      if (!grouped[category]) {
+        grouped[category] = [];
+      }
+      grouped[category].push(book);
+    });
+
+    const container = document.getElementById('books');
+    container.innerHTML = '';
+    if (books.length === 0) {
+      container.textContent = 'No books yet. Add some with POST /topics.';
+      return;
+    }
+    for (const [category, items] of Object.entries(grouped)) {
+      const section = document.createElement('div');
+      section.className = 'category';
+      const heading = document.createElement('h2');
+      heading.textContent = category;
+      section.appendChild(heading);
+      items.forEach(book => {
+        const div = document.createElement('div');
+        div.className = 'book';
+        div.textContent = `${book.name} (ID: ${book.id})`;
+        section.appendChild(div);
+      });
+      container.appendChild(section);
+    }
+  } catch (error) {
+    document.getElementById('books').textContent = 'Failed to load books: ' + error;
+  }
+}
+
+// Load data on page load
+fetchBooks();
+</script>
+</body>
+</html>
