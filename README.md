@@ -32,6 +32,7 @@ A 4-week intensive Java programming course at Technische Universität Berlin, co
 
 **Web & Frameworks**
 - Spring Framework and Dependency Injection (introductory)
+- Spring Boot and Spring Data JPA (applied in Project 4)
 - RESTful Web Services concepts (introductory)
 - Servlets and JSP (introductory)
 
@@ -56,6 +57,11 @@ A turn-based strategy game implementing game logic with Java.
 A dental reservation system with persistent data storage.  
 **Key concepts:** JDBC, SQLite, Maven, refactoring  
 👉 *Refactored and extended version:* [Dental-Reservation-System](https://github.com/VikingCrusader/Dental-Reservation-System)
+
+### Project 4 – Bookstore (Book Topics Service)
+A REST service for managing book topics, built with Spring Boot 3.5 using a Controller → Service → Repository architecture and an embedded H2 database (optional MySQL profile).  
+**Key concepts:** Spring Boot, REST APIs (CRUD), Spring Data JPA, dependency injection, Maven  
+👉 *Details:* [Project 4 Bookstore/README.md](Project%204%20Bookstore/README.md)
 
 ---
 
